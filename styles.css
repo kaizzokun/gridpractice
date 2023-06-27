@@ -1,0 +1,64 @@
+:root {
+    --main-white: #f0f0f0;
+    --main-blue: #45567d;
+    --main-red: #be3144;
+    --main-gray: #303841;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: "Menlo", monospace;
+    scroll-behavior: smooth;
+  }
+  #projects {
+   background-color: var(--main-blue);
+   text-align: center;
+  }
+  h2 {
+    font-size: 4rem;
+    color: var(--main-white);
+    border-bottom: 0.2rem solid var(--main-white);
+    max-width: 680px;
+    margin: 0 auto 8rem auto;
+  }
+  a {
+    text-decoration: none;
+    color: var(--main-white);
+    cursor: pointer;
+  }
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+      grid-gap: 4rem;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+    max-width: 1280px;
+  }
+  img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    height: 85%;
+  }
+  #project-tile {
+    background-color: var(--main-gray);
+    box-shadow: 1px 1px 3px 1px var(--main-gray);
+    border-radius: 3px;
+  }
+  .project-title {
+    font-size: 2.2rem;
+    background-color: var(--main-gray);
+  }
+  .code {
+    color: var(--main-gray);
+    transition: color 0.3s ease-out;
+  }
+  #project-title:hover  {
+    color: var(--main-red);
+  }
+  
+  
